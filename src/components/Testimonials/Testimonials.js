@@ -52,11 +52,11 @@ const Testimonials = () => {
           src= {testimonialsData[selected].image} alt="user" />
 
           <div className='arrows'>
-            <img src= {leftArrow} onClick = {() => {
+            <img src= {leftArrow} alt="left arrow" onClick = {() => {
               selected === 0?setSelected(tLength-1):
               setSelected((prev) => prev - 1)
             }} />
-            <img src= {rightArrow} onClick = {() => {
+            <img src= {rightArrow} alt="right arrow" onClick = {() => {
               selected === tLength - 1?setSelected(0):setSelected((prev) => prev + 1);
             }} />
           </div>
