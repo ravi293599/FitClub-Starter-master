@@ -20,7 +20,7 @@ const Header = () => {
           </div>
         ): (
           <ul className={menuOpened === false ? "headerMenu":"headerMenu active"}>
-            <IoClose className='ham-close' onClick={() => setMenuOpened(false)} />
+            {menuOpened === true && <IoClose className='ham-close' onClick={() => setMenuOpened(false)} />}
           <li><Link
           onClick={() => setMenuOpened(false)}
           to="Home"

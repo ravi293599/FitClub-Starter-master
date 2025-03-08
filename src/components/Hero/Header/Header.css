@@ -24,24 +24,21 @@
     color: var(--orange);
 }
 @media screen and (max-width: 768px) {
-    /* .header > :nth-child(2){
-        position: fixed;
-        right: 15px;
-        z-index: 99;
-        flex-direction: column;
-        background: #363d42;
-        padding: 10px;
-    } */
-    .hamburger{
+     .header{
         background: var(--appColor);
-        padding: 0.5rem;
-        border-radius: 5px;
         position: fixed;
-        right: 15px;
-        z-index: 99;
-        flex-direction: column;
-        background: #363d42;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
         padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        align-items: center;
+     }
+    .left-h {
+        padding-top: 100px;
     }
     .ham-close {
         position: absolute;

@@ -94,4 +94,7 @@
         bottom: 0;
         left: 0;
     }
+    .right-t .arrows{
+        display: flex;
+    }
 }
