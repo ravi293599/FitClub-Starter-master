@@ -6,6 +6,11 @@
     width: 10rem;
     height: 3rem;
 }
+.bars{
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(97%) saturate(13%) hue-rotate(212deg) brightness(103%) contrast(105%);
+}
 .headerMenu{
     list-style: none;
     display: flex;
@@ -19,17 +24,50 @@
     color: var(--orange);
 }
 @media screen and (max-width: 768px) {
-    .header > :nth-child(2){
+    /* .header > :nth-child(2){
         position: fixed;
-        right: 2rem;
+        right: 15px;
         z-index: 99;
         flex-direction: column;
         background: #363d42;
-        padding: 20px;
+        padding: 10px;
+    } */
+    .hamburger{
+        background: var(--appColor);
+        padding: 0.5rem;
+        border-radius: 5px;
+        position: fixed;
+        right: 15px;
+        z-index: 99;
+        flex-direction: column;
+        background: #363d42;
+        padding: 10px;
+    }
+    .ham-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 32px;
+        cursor: pointer;
     }
     .header-menu{
         flex-direction: column;
         background-color: var(--appColor);
-        padding: 2rem;
+        padding: 2rem;      
+    }
+    .headerMenu.active{
+        position: fixed;
+        right: 0;
+        z-index: 99;
+        flex-direction: column;
+        background: #363d42;
+        padding: 0;
+        width: 100%;
+        top: 0;
+        margin: 0;
+        bottom: 0;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 22px;
     }
 }

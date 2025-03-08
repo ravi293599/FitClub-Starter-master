@@ -11,12 +11,12 @@ const Footer = () => {
         <hr />
         <div className='footer'>
             <div className='social-link'>
-                <img src={Github} alt="" />
-                <img src={LinkedIn} alt="" />
-                <img src={Instagram} alt="" />
+                <img src={Github} alt="Github" />
+                <img src={LinkedIn} alt="LinkedIn" />
+                <img src={Instagram} alt="Instagram" />
             </div>
             <div className='logo-f'>
-                <img src= {Logo} alt="" />
+                <img src= {Logo} alt="Logo" />
             </div>
         </div>
         <div className='blur footer-blur-1'></div>

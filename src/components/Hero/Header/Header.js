@@ -1,28 +1,26 @@
 import React from 'react'
 import "./Header.css"
 import Logo from "../../../assets/logo.png"
-import Bars from "../../../assets/bars.png"
 import { useState } from "react"
 import { Link } from 'react-scroll'
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const mobile = window.innerWidth<=768 ? true : false;
   const [menuOpened, setMenuOpened] = useState(false);
   return (
     <div className='header'>
-        <img src={Logo} className="logo" />
+        <img src={Logo} className="logo" alt='Logo' />
         {menuOpened === false && mobile === true ? (
-          <div style={{
-            backgroundColor: "var(--appColor)",
-            padding: "0.5rem",
-            borderRadius: "5px"
-          }}
+          <div className="hamburger" 
           onClick={() => setMenuOpened(true)}
           >
-            <img src = {Bars} alt="Bars" style={{width: '1.5rem', height: '1.5rem'}} />
+            <RxHamburgerMenu className="bars" />
           </div>
         ): (
-          <ul className='headerMenu'>
+          <ul className={menuOpened === false ? "headerMenu":"headerMenu active"}>
+            <IoClose className='ham-close' onClick={() => setMenuOpened(false)} />
           <li><Link
           onClick={() => setMenuOpened(false)}
           to="Home"
