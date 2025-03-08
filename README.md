@@ -1,10 +1,10 @@
-#Checkout the Live Link
-
------https://fitclub-ravi.netlify.app/------
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Checkout the Live Link
+
+https://fitclub-ravi.netlify.app/
 
 ## Available Scripts
 
