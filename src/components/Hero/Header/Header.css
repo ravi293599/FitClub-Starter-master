@@ -37,9 +37,6 @@
         box-sizing: border-box;
         align-items: center;
      }
-    .left-h {
-        padding-top: 100px;
-    }
     .ham-close {
         position: absolute;
         top: 15px;
