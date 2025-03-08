@@ -45,7 +45,7 @@ const Reason = () => {
           </div>
           <div>
             <img src = {tick} alt="tick" />
-            <img src = {tick} alt="tick" />
+            <img src = {tick} alt="tick"  />
             <span>Reliable partners</span>
           </div>
         </div>
